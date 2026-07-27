@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 # Replace with your actual live Streamlit app URL
-STREAMLIT_URL = "https://your-app-name.streamlit.app"
+STREAMLIT_URL = "https://youtuberadar.streamlit.app/"
 
 
 def main():

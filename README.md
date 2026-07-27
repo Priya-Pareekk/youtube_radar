@@ -2,6 +2,8 @@
 
 An advanced data analytics tool that performs real-time sentiment analysis on YouTube comments to gauge public mood on any topic or compare competitors.
 
+🌐 **Live App**: [https://youtuberadar.streamlit.app/](https://youtuberadar.streamlit.app/)
+
 ## 🚀 Features
 - **Solo Analysis**: Deep dive into a single topic with thematic bar charts and sentiment distribution.
 - **Competitor Battle**: Side-by-side sentiment comparison (e.g., iPhone vs. Samsung) to determine a "Market Winner."
