@@ -99,9 +99,6 @@ if run_btn:
             # 2. Charts Row
             col_left, col_right = st.columns(2)
             
-            # 2. Charts Row
-            col_left, col_right = st.columns(2)
-            
             with col_left:
                 st.markdown("#### 📊 Top Discussion Themes")
                 
