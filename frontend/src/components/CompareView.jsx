@@ -10,14 +10,14 @@ function Side({ result }) {
       <div className="gauge-card" style={{ marginBottom: 20 }}>
         <Dial score={result.avg_score} size="small" />
         <span className="result-meta">
-          {result.total_comments} comments · {result.video_count} videos
+          {result.total_comments} comments · {result.item_count} items
         </span>
         <button className="export-btn" onClick={() => exportCsv(result)}>
           Export CSV
         </button>
       </div>
       <ThemeBars themes={result.themes.slice(0, 6)} />
-      <VideoBreakdown videos={result.videos} />
+      <VideoBreakdown items={result.items} />
     </div>
   );
 }

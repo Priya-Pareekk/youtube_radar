@@ -658,3 +658,34 @@ button {
   border-color: var(--verdigris);
   color: var(--verdigris);
 }
+
+/* Platform toggle pills + tags ------------------------------------------ */
+
+.mode-switch-pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 5px 11px;
+  color: var(--ink-faint);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mode-switch-pill.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-raised);
+}
+
+.platform-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--verdigris);
+  border: 1px solid var(--verdigris-soft);
+  border-radius: 4px;
+  padding: 1px 5px;
+}

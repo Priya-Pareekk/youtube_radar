@@ -4,21 +4,23 @@ function moodOf(score) {
   return "neutral";
 }
 
-export default function VideoBreakdown({ videos = [] }) {
-  if (!videos.length) return null;
+const PLATFORM_LABEL = {
+  youtube: "YT",
+  reddit: "RD",
+};
+
+export default function VideoBreakdown({ items = [] }) {
+  if (!items.length) return null;
 
   return (
     <div className="panel">
-      <h3>Per-video breakdown</h3>
-      {videos.map((v) => (
-        <div className="video-row" key={v.video_id}>
+      <h3>Per-item breakdown</h3>
+      {items.map((v) => (
+        <div className="video-row" key={`${v.platform}-${v.id}`}>
           <div>
             <div className="video-title">
-              <a
-                href={`https://www.youtube.com/watch?v=${v.video_id}`}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <span className="platform-tag">{PLATFORM_LABEL[v.platform] || v.platform}</span>{" "}
+              <a href={v.url} target="_blank" rel="noreferrer">
                 {v.title}
               </a>
             </div>

@@ -12,7 +12,8 @@ export default function ResultsPanel({ result }) {
       <div className="result-header">
         <h2>“{result.topic}”</h2>
         <span className="result-meta">
-          {result.total_comments} comments · {result.video_count} videos scanned
+          {result.total_comments} comments · {result.item_count} items ·{" "}
+          {result.platforms.join(" + ")}
         </span>
       </div>
 
@@ -31,7 +32,7 @@ export default function ResultsPanel({ result }) {
 
         <div>
           <ThemeBars themes={result.themes} />
-          <VideoBreakdown videos={result.videos} />
+          <VideoBreakdown items={result.items} />
         </div>
       </div>
     </section>
