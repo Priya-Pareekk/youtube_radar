@@ -4,7 +4,6 @@ import ResultsPanel from "./components/ResultsPanel.jsx";
 import CompareView from "./components/CompareView.jsx";
 import HistoryDrawer from "./components/HistoryDrawer.jsx";
 import AuthBar from "./components/AuthBar.jsx";
-import PlatformToggle from "./components/PlatformToggle.jsx";
 import WatchesPanel from "./components/WatchesPanel.jsx";
 import { authEnabled, supabase } from "./supabaseClient.js";
 
@@ -161,7 +160,6 @@ export default function App() {
           )}
 
           <div className="field-foot">
-            <PlatformToggle platforms={platforms} onChange={setPlatforms} />
             <div className="slider-field">
               <label htmlFor="limit">Items to scan</label>
               <input
